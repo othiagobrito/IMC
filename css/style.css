@@ -149,21 +149,20 @@ main {
 
 @media only screen and (max-width: 768px) {
     main {
-        width: auto;
-        height: auto;
+        display: table;
+        margin: 0 auto;
     }
 
     .card {
-        margin: 10px;
-        width: 350px;
-        height: 500px;
+        width: 320px;
+        height: 530px;
     
         border: #000000 1px solid;
         border-radius: 2%;
     }
 
     .btn {
-        width: 315px;
+        width: 288px;
         height: 36px;
     
         background-color: #2e4eff;
@@ -187,7 +186,7 @@ main {
     }
     
     .tabela-info table, td {
-        width: 150px;
-        height: 54px;
+        width: 135px;
+        height: 58px;
     }
 }
