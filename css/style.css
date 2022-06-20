@@ -1,0 +1,187 @@
+main {
+    width: auto;
+    height: auto;
+}
+
+.card {
+    margin: 30px;
+    
+    width: 500px;
+    height: 450px;
+
+    border: #000000 1px solid;
+    border-radius: 2%;
+
+    float: left;
+}
+
+.main-card {
+    background-color: #fafafa;
+}
+
+.card-info {
+    background-color: #f3f3f3;
+}
+
+.card-tabela {
+    background-color: #e7e7e7;
+}
+
+.main-card--title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.campos-form {
+    margin: 5%;
+}
+
+.campo-input {
+    display: grid;
+    align-content: center;
+    padding-bottom: 35px;
+}
+
+.campo-input input {
+    height: 30px;
+}
+
+.campo-input label {
+    text-align: left;
+
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.campo-btn {
+    justify-content: center;
+}
+
+.btn {
+    width: 450px;
+    height: 30px;
+
+    background-color: #2e4eff;
+
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+
+    border: none;
+}
+
+.btn:hover {
+    background-color: #4d67ff;
+}
+
+.btn:active {
+    background-color: #686868;
+}
+
+.resultado {
+    font-size: 25px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.esconder {
+    display: none;
+}
+
+.tabela-info {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tabela-info table, th, td {
+    border: 1px solid;
+
+    width: 55%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-info table, th {
+    height: 50px;
+}
+
+.tabela-info table, td {
+    width: 200px;
+    height: 45px;
+}
+
+.tabela-info--cabecalho {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tabela-info--celulas {
+    font-size: 20px;
+}
+
+.info-imc {
+    margin: 20px;
+}
+
+.card-info h2 {
+    font-size: 25px;
+    font-weight: 400;
+
+    text-align: left;
+}
+
+.info-imc--fonte {
+    padding-top: 30px;
+}
+
+.info-imc--fonte a, a:visited {
+    text-decoration: none;
+
+    color: #003cff;
+}
+
+.info-imc--fonte a:hover {
+    color: #4e77ff;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {        
+        width: 350px;
+        height: 500px;
+    
+        border: #000000 1px solid;
+        border-radius: 2%;
+    }
+
+    .btn {
+        width: 315px;
+        height: 36px;
+    
+        background-color: #2e4eff;
+    
+        font-size: large;
+        font-weight: bold;
+        color: #fff;
+    
+        border: none;
+    }
+
+    .tabela-info table, th, td {
+        border: 1px solid;
+    
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .tabela-info table, th {
+        height: 50px;
+    }
+    
+    .tabela-info table, td {
+        width: 150px;
+        height: 54px;
+    }
+}

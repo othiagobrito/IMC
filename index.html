@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Calculadora de Índice de Massa Corporal</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="main-card card">
+            <div class="main-card--title-space">
+                <h1 class="main-card--title">Calcule seu IMC</h1><hr>
+            </div>
+
+            <div class="campos-form">
+                <form id="form-imc">
+                    <div class="campo-input campo-altura">
+                        <label for="altura">Altura</label>
+                        <input type="number" id="altura" value="altura" placeholder="Exemplo: 1.75">
+                    </div>
+
+                    <div class="campo-input campo-peso">
+                        <label for="peso">Peso</label>
+                        <input type="number" id="peso" value="peso" placeholder="Exemplo: 73">
+                    </div>
+
+                    <div class="campo-input campo-btn">
+                        <button id="calcula-imc" class="btn">Calcular</button>
+                    </div>
+
+                    <div id="campo-resultado" class="campo-input campo-resultado esconder">
+                        <h2 class="resultado">Resultado: <span id="resultado"></span></h2>
+                        <h2 class="resultado status" id="resultado-status"></h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-info card">
+            <div class="main-card--title-space">
+                <h1 class="main-card--title">O que é IMC?</h1><hr>
+            </div>
+
+            <div class="info-imc">
+                <div class="info-imc--p">
+                <h2>Índice de massa corporal</h2><br>
+                    <p>
+                        O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).
+                    </p><br>
+                    <p>
+                        O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros.
+                    </p><br>
+                </div>
+
+                <div class="info-imc--img">
+                    <img src="img/conta.svg" alt="Fórmula IMC">
+                </div>
+
+                <div class="info-imc--fonte">
+                    <p>
+                        Fonte: <a target="_blank" href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal">Wikepedia</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-tabela card">
+            <div class="main-card--title-space">
+                <h1 class="main-card--title">Tabela IMC</h1><hr>
+            </div>
+
+            <div class="tabela">
+                <table class="tabela-info">
+                    <tr class="tabela-info--cabecalho">
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+
+                    <tr class="tabela-info--celulas">
+                        <td>Abaixo do Peso</td>
+                        <td>Abaixo 18,5</td>
+                    </tr>
+                    <tr class="tabela-info--celulas">
+                        <td>Peso Normal</td>
+                        <td>18,5 - 24,9</td>
+                    </tr>
+                    <tr class="tabela-info--celulas">
+                        <td>Sobrepeso</td>
+                        <td>25 - 29,9</td>
+                    </tr>
+                    <tr class="tabela-info--celulas">
+                        <td>Obesidade Grau I</td>
+                        <td>30 - 34,9</td>
+                    </tr>
+                    <tr class="tabela-info--celulas">
+                        <td>Obesidade Grau II</td>
+                        <td>35 - 39,9</td>
+                    </tr>
+                    <tr class="tabela-info--celulas">
+                        <td>Obesidade Grau III</td>
+                        <td>Maior ou igual 40</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/calcula.js"></script>
+</body>
+</html>
