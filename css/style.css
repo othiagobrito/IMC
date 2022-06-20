@@ -9,22 +9,11 @@ main {
     width: 500px;
     height: 450px;
 
+    background-color: #fafafa;
     border: #000000 1px solid;
     border-radius: 2%;
 
     float: left;
-}
-
-.main-card {
-    background-color: #fafafa;
-}
-
-.card-info {
-    background-color: #f3f3f3;
-}
-
-.card-tabela {
-    background-color: #e7e7e7;
 }
 
 .main-card--title {
@@ -106,6 +95,8 @@ main {
 
 .tabela-info table, th {
     height: 50px;
+
+    background-color: #6a9eff;
 }
 
 .tabela-info table, td {
@@ -113,8 +104,16 @@ main {
     height: 45px;
 }
 
+.tabela-info table, tr:nth-child(even) {
+    background-color: #dde9ff;
+}
+
+.tabela-info table, tr:nth-child(odd) {
+    background-color: #c4d9ff;
+}
+
 .tabela-info--cabecalho {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -187,10 +186,15 @@ main {
     
     .tabela-info table, td {
         width: 135px;
-        height: 58px;
+        height: 61px;
     }
 
     .info-imc--fonte {
         padding-top: 10px;
+    }
+
+    .tabela-info--cabecalho {
+        font-size: 28px;
+        font-weight: bold;
     }
 }
