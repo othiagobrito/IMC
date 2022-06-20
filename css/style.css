@@ -1,6 +1,8 @@
 main {
     width: auto;
     height: auto;
+    position: absolute;
+    vertical-align: middle;
 }
 
 .card {
@@ -146,6 +148,21 @@ main {
     color: #4e77ff;
 }
 
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 1rem; 
+
+    background-color: #000000;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
 @media only screen and (max-width: 768px) {
     main {
         display: table;
@@ -196,5 +213,20 @@ main {
     .tabela-info--cabecalho {
         font-size: 28px;
         font-weight: bold;
+    }
+
+    #footer {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        min-height: 1rem; 
+    
+        background-color: #000000;
+    }
+
+    .footer {
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
     }
 }
