@@ -189,4 +189,8 @@ main {
         width: 135px;
         height: 58px;
     }
+
+    .info-imc--fonte {
+        padding-top: 10px;
+    }
 }
