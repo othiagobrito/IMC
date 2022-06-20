@@ -1,6 +1,7 @@
 main {
     width: auto;
     height: auto;
+
 }
 
 .card {
@@ -148,6 +149,11 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+    main {
+        width: auto;
+        height: auto;
+    }
+
     .card {        
         width: 350px;
         height: 500px;
