@@ -167,12 +167,20 @@
 }
 
 @media only screen and (max-width: 768px) {
-    main {
-        display: table;
-        margin: 0 auto;
+    .content {
+        height: 260vh;
+        
+        display: block;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #f7f7f7;
     }
 
     .card {
+        margin-left: 7%;
+        margin-bottom: 30px;
+
         width: 320px;
         height: 550px;
     
